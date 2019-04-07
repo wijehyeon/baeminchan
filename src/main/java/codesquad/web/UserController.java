@@ -1,5 +1,6 @@
 package codesquad.web;
 
+import codesquad.domain.UserDTO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @RequestMapping("/signUp")
-    public void signUp(){
+    public void signUp(UserDTO userDTo){
 
     }
 }
