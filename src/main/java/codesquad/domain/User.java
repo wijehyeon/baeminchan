@@ -1,5 +1,6 @@
 package codesquad.domain;
 
+import codesquad.exception.UnVerificationException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,20 +20,26 @@ public class User {
     private long id;
 
     @NotNull
-    @Size(max=30)
+    @Size(max = 30)
     private String email;
 
     @NotNull
-    @Size(max=30)
+    @Size(max = 30)
     private String name;
 
     @NotNull
-    @Size(max=30)
+    @Size(max = 30)
     private String password;
 
     @NotNull
-    @Size(max=15)
+    @Size(max = 15)
     private String phoneNumber;
 
 
+    public boolean isCorrectPassword(String fakePassword) {
+        if (!password.equals(fakePassword)) {
+            throw new UnVerificationException("비밀번호가 다릅니다");
+        }
+        return true;
+    }
 }
