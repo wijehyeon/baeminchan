@@ -1,26 +1,38 @@
 package codesquad.domain;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+@Entity
+@Getter
+@Setter
+@AllArgsConstructor
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(length = 50, nullable = false)
+    @NotNull
+    @Size(max=30)
     private String email;
 
-    @Column(nullable = false)
+    @NotNull
+    @Size(max=30)
     private String name;
 
-    @Column(nullable = false)
+    @NotNull
+    @Size(max=30)
     private String password;
 
-    @Column(nullable = false)
+    @NotNull
+    @Size(max=15)
     private String phoneNumber;
+
 
 }
