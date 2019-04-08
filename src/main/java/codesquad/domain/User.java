@@ -4,6 +4,7 @@ import codesquad.exception.UnVerificationException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -38,11 +39,16 @@ public class User {
 
     }
 
-
-    public boolean isCorrectPassword(String fakePassword) {
-        if (!password.equals(fakePassword)) {
-            throw new UnVerificationException("비밀번호가 다릅니다");
+    public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
+        if(!passwordEncoder.matches(loginDTO.getPassword(), this.getPassword())){
+            return false;
         }
         return true;
     }
+
+    public void encodePassword(PasswordEncoder passwordEncoder) {
+        this.password = passwordEncoder.encode(password);
+    }
+
+
 }

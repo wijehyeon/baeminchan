@@ -21,7 +21,7 @@ public class ApiUserController {
 
     @PostMapping
     public ResponseEntity<Void> create(@Valid @RequestBody UserDTO userDTO) {
-        User user = userService.save(userDTO);
+        User user = userService.create(userDTO);
 
 
     }

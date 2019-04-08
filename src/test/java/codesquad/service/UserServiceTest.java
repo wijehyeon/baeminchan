@@ -10,6 +10,11 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.Optional;
+
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceTest {
@@ -17,7 +22,9 @@ public class UserServiceTest {
     @Mock
     private UserRepository userRepository;
 
-    private User user;
+    @Mock
+    private PasswordEncoder passwordEncoder;
+
 
     private LoginDTO loginDTO;
 
@@ -30,16 +37,22 @@ public class UserServiceTest {
     public void setUp() {
         userDTO = new UserDTO("email", "name", "password", "010-1234-1234");
         loginDTO = new LoginDTO("email", "password");
-        user = new User(1l, "email", "name", "password", "010-1234-1234");
     }
 
     @Test
-    public void 로그인_하지_않음() {
+    public void 회원가입() {
+        User user = new User(userDTO);
+        when(userRepository.save(user)).thenReturn(user);
+        User newUser = userService.
+    }
+
+    @Test
+    public void 로그인_성공() {
 
     }
 
     @Test
-    public void 다른_사용자의_접근() {
+    public void 로그인_실패_패스워드_불일치() {
 
     }
 
