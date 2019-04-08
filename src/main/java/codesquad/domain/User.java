@@ -12,7 +12,6 @@ import javax.validation.constraints.Size;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
 public class User {
 
     @Id
@@ -34,6 +33,10 @@ public class User {
     @NotNull
     @Size(max = 15)
     private String phoneNumber;
+
+    public User(UserDTO userDTO) {
+
+    }
 
 
     public boolean isCorrectPassword(String fakePassword) {
