@@ -25,7 +25,6 @@ public class UserService {
         return userRepository.save(user);
     }
 
-
     public User login(LoginDTO loginDTO) {
         User user = userRepository.findByEmail(loginDTO.getEmail()).orElseThrow(() -> new UnAuthenticationException("No Such User using having that email"));
         if (!user.isCorrectPassword(passwordEncoder, loginDTO)) {

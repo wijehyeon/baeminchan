@@ -43,7 +43,6 @@ public class UserServiceTest {
     public void 회원가입() {
         User user = new User(userDTO);
         when(userRepository.save(user)).thenReturn(user);
-        User newUser = userService.
     }
 
     @Test

@@ -25,7 +25,6 @@ public class ApiUserAcceptanceTest extends AcceptanceTest {
 
     @Before
     public void setUp() {
-        ResponseEntity<Void> response =
     }
 
     @Test
