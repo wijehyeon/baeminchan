@@ -1,15 +1,29 @@
 package codesquad.web;
 
 import codesquad.domain.UserDTO;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpSession;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-    @RequestMapping("/signUp")
-    public void signUp(UserDTO userDTo){
+    @GetMapping("/signup")
+    public String signup() {
+        return "/user/join";
+    }
 
+    @GetMapping("/login")
+    public String login() {
+        return "/user/login";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        SessionUtil.removeUserSession(session);
+        return "redirect:/";
     }
 }
