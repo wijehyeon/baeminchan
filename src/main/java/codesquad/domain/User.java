@@ -1,6 +1,5 @@
 package codesquad.domain;
 
-import codesquad.exception.UnVerificationException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,6 +12,7 @@ import javax.validation.constraints.Size;
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -36,11 +36,14 @@ public class User {
     private String phoneNumber;
 
     public User(UserDTO userDTO) {
-
+        this.email = userDTO.getEmail();
+        this.name = userDTO.getName();
+        this.password = userDTO.getPassword();
+        this.phoneNumber = userDTO.getPhoneNumber();
     }
 
     public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
-        if(!passwordEncoder.matches(loginDTO.getPassword(), this.getPassword())){
+        if (!passwordEncoder.matches(loginDTO.getPassword(), this.getPassword())) {
             return false;
         }
         return true;
