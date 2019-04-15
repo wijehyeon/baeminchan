@@ -9,6 +9,7 @@ import codesquad.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Service("userService")
@@ -19,12 +20,15 @@ public class UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    @Transactional
     public User create(UserDTO userDTO) {
-        User user = new User(userDTO);
+        User user;
+        user = new User(userDTO);
         user.encodePassword(passwordEncoder);
         return userRepository.save(user);
     }
 
+    @Transactional
     public User login(LoginDTO loginDTO) {
         User user = userRepository.findByEmail(loginDTO.getEmail()).orElseThrow(() -> new UnAuthenticationException("No Such User using having that email"));
         if (!user.isCorrectPassword(passwordEncoder, loginDTO)) {

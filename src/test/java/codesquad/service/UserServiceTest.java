@@ -12,8 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.util.Optional;
-
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -35,7 +33,7 @@ public class UserServiceTest {
 
     @Before
     public void setUp() {
-        userDTO = new UserDTO("email", "name", "password", "010-1234-1234");
+        userDTO = new UserDTO("email", "name", "password","password", "010-1234-1234");
         loginDTO = new LoginDTO("email", "password");
     }
 

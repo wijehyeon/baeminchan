@@ -1,42 +1,47 @@
-function $(selector){
-    return document.querySelector(selector)
+document.addEventListener("DOMContentLoaded", () => {
+    initEvents();
+})
+
+function $(selector) {
+    return document.querySelector(selector);
 }
 
-function init(){
-    const joinButton = $('#joinSubmit')
-    joinButton.addEventListener("click", joinUser)
+function initEvents() {
+    const submitBtn = $("#joinSubmit");
+    submitBtn.addEventListener("click", registerUserSignUpHandler);
 }
 
-function fetchManager({ url, method, body, headers, callback }) {
-    fetch(url, {method,body,headers,credentials: "same-origin"})
-        .then((response) => {
-            if(response.status == 200) {
-                location.href = '/'
-                return
-            }
-            return callback(response.json());
-        })
-}
+function registerUserSignUpHandler(evt) {
+    evt.preventDefault();
+    const email = $('#email_id').value;
+    const emailDomain = $('#email_domain').value;
+    const password = $('#pw1').value;
+    const name = $('#name').value;
+    const phoneNumber = $('#cell1').value + $('#cell2').value + $('#cell3').value;
 
-function joinUser(event){
-    const joinForm = $(".tb_join")
-    let userId = joinForm.querySelector('#email_id').value + "@" + joinForm.querySelector('email_domain')
-    let password = joinForm.querySelector('#pw1').value
-    let password2 = joinForm.querySelector('#pw2').value
-    let name = joinForm.querySelector('#name').value
-    let phoneNumber = joinTable.querySelector('#cell1').value +'-'+ joinTable.querySelector('#cell2').value + '-'+ joinTable.querySelector('#cell3').value;
     fetchManager({
-        url: '/api/users',
-        method: 'POST',
-        headers: { 'content-type': 'application/json'},
+        url: "/users",
+        method: "post",
+        headers: {'content-type': 'application/json; charset=utf-8'},
         body: JSON.stringify({
-            "userId" : userId,
-            "password" : password,
-            "password2" : password2,
-            "name" : name,
-            "phoneNumber" : phoneNumber
+            "email": email + '@' + emailDomain,
+            "password": password,
+            "password2": password,
+            "name": name,
+            "phoneNumber": phoneNumber
         }),
-        callback: alertError
+        callback: function (response) {
+            console.log(response)
+            location.href = '/'
+        }
     })
 }
 
+function fetchManager({url, method, body, headers, callback}) {
+    fetch(url, {method, body, headers, credentials: "same-origin"})
+        .then((response) => {
+            return response.json()
+        }).then((result) => {
+        callback(result)
+    })
+}

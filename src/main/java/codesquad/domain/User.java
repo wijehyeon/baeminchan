@@ -6,40 +6,36 @@ import lombok.Setter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
-@Entity
 @Getter
 @Setter
 @AllArgsConstructor
+@Entity
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotNull
-    @Size(max = 30)
+    @Column(nullable = false)
     private String email;
 
-    @NotNull
-    @Size(max = 30)
+    @Column(nullable = false)
     private String name;
 
-    @NotNull
-    @Size(max = 30)
+    @Column(nullable = false)
     private String password;
 
-    @NotNull
-    @Size(max = 15)
+    @Column(nullable = false)
     private String phoneNumber;
 
     public User(UserDTO userDTO) {
-        this.email = userDTO.getEmail();
-        this.name = userDTO.getName();
-        this.password = userDTO.getPassword();
-        this.phoneNumber = userDTO.getPhoneNumber();
+        if (userDTO.isPasswordCorrect()) {
+            this.email = userDTO.getEmail();
+            this.name = userDTO.getName();
+            this.password = userDTO.getPassword();
+            this.phoneNumber = userDTO.getPhoneNumber();
+        }
     }
 
     public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
@@ -52,6 +48,4 @@ public class User {
     public void encodePassword(PasswordEncoder passwordEncoder) {
         this.password = passwordEncoder.encode(password);
     }
-
-
 }

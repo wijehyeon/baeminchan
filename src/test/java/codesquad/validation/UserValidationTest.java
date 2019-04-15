@@ -1,5 +1,9 @@
-package codesquad.domain;
+package codesquad.validation;
 
+import codesquad.domain.User;
+import codesquad.domain.UserDTO;
+import codesquad.domain.UserTest;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -10,10 +14,10 @@ import javax.validation.ValidatorFactory;
 import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.is;
 
 public class UserValidationTest {
     private static Validator validator;
+    private UserDTO userDTO;
 
     @BeforeClass
     public static void setup() {
@@ -21,13 +25,19 @@ public class UserValidationTest {
         validator = factory.getValidator();
     }
 
+    @Before
+    public void setupUserDTO(){
+        userDTO = UserTest.TEST_USER;
+
+    }
+
     @Test
     public void 이메일_포맷_통과() {
-        User user = new User(1l, "email@gmail.com", "name", "password", "010-1234-1234");
-
+        User user = new User(userDTO);
         Set<ConstraintViolation<User>> constraintViolations = validator.validate(user);
         assertThat(constraintViolations.size()).isEqualTo(0);
     }
+
 
 
 

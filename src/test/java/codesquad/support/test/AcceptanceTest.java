@@ -17,7 +17,7 @@ public class AcceptanceTest {
     @Autowired
     private UserRepository userRepository;
 
-    public TestRestTemplate template(){
+    public TestRestTemplate template() {
         return template;
     }
 }
