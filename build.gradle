@@ -15,6 +15,11 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+jar {
+    baseName = 'spring-validation'
+    version = '0.0.1-SNAPSHOT'
+}
+
 version = '1.0.0'
 sourceCompatibility = 1.8
 

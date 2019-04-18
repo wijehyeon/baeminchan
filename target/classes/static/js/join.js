@@ -32,7 +32,6 @@ function registerUserSignUpHandler(evt) {
         }),
         callback: function (response) {
             console.log(response)
-            location.href = '/'
         }
     })
 }
@@ -44,4 +43,9 @@ function fetchManager({url, method, body, headers, callback}) {
         }).then((result) => {
         callback(result)
     })
+}
+
+var markErrorField = function(response){
+    const errorFields = response.responseJSON.errors;
+
 }

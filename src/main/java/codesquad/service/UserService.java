@@ -1,39 +1,43 @@
 package codesquad.service;
 
-import codesquad.domain.LoginDTO;
-import codesquad.domain.User;
-import codesquad.domain.UserDTO;
-import codesquad.exception.UnAuthenticationException;
-import codesquad.exception.UnVerificationException;
+import codesquad.domain.*;
+import codesquad.exception.BadRequestException;
 import codesquad.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 
 @Service("userService")
 public class UserService {
-    @Autowired
+
     private UserRepository userRepository;
+
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Transactional
-    public User create(UserDTO userDTO) {
-        User user;
-        user = new User(userDTO);
-        user.encodePassword(passwordEncoder);
-        return userRepository.save(user);
+    public User save(UserRequestDTO userRequestDTO) {
+        if(userRepository.findByEmail(userRequestDTO.getEmail()).isPresent()){
+            throw new BadRequestException("이미 존재하는 이메일입니다");
+        }
+        return userRepository.save(userRequestDTO.toEntity());
     }
 
-    @Transactional
-    public User login(LoginDTO loginDTO) {
-        User user = userRepository.findByEmail(loginDTO.getEmail()).orElseThrow(() -> new UnAuthenticationException("No Such User using having that email"));
-        if (!user.isCorrectPassword(passwordEncoder, loginDTO)) {
-            throw new UnVerificationException("비밀번호 불일치");
-        }
-        return user;
+    @Transactional(readOnly = true)
+    public List<UserResponseDTO> findAll() {
+        return userRepository
+                .findAll()
+                .stream()
+                .map(UserResponseDTO::new)
+                .collect(Collectors.toList());
     }
 }

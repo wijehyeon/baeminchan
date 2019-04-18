@@ -1,15 +1,13 @@
 package codesquad.web;
 
-import codesquad.domain.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.UserDTO;
+import codesquad.domain.UserRequestDTO;
 import codesquad.service.UserService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.net.URI;
 
@@ -17,13 +15,16 @@ import java.net.URI;
 @RequestMapping("/users")
 public class ApiUserController {
 
-    @Resource(name = "userService")
     private UserService userService;
+
+    public ApiUserController(UserService userService){
+        this.userService = userService;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Void> create(@Valid @RequestBody UserDTO userDTO) {
-        User user = userService.create(userDTO);
+    public ResponseEntity<Void> create(@RequestBody @Valid UserRequestDTO userRequestDTO) {
+        User user = userService.save(userRequestDTO);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(URI.create("/users/" + user.getId()));
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
@@ -31,8 +32,7 @@ public class ApiUserController {
 
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Void> login(@Valid @RequestBody LoginDTO loginDTO) {
-        userService.login(loginDTO);
+    public ResponseEntity<Void> login(@Valid @RequestBody UserRequestDTO UserR) {
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

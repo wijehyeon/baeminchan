@@ -2,7 +2,6 @@ package codesquad.validation;
 
 import codesquad.domain.User;
 import codesquad.domain.UserDTO;
-import codesquad.domain.UserTest;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -27,7 +26,6 @@ public class UserValidationTest {
 
     @Before
     public void setupUserDTO(){
-        userDTO = UserTest.TEST_USER;
 
     }
 

@@ -20,6 +20,7 @@ public class User {
     @Column(nullable = false)
     private String email;
 
+
     @Column(nullable = false)
     private String name;
 
@@ -36,6 +37,19 @@ public class User {
             this.password = userDTO.getPassword();
             this.phoneNumber = userDTO.getPhoneNumber();
         }
+    }
+
+    public User(UserRequestDTO userRequestDTO){
+        this.email = userRequestDTO.getEmail();
+        this.name = userRequestDTO.getName();
+        this.password = userRequestDTO.getPassword();
+        this.phoneNumber = userRequestDTO.getPhoneNumber();
+    }
+
+    public User(String name, String phoneNumber, String email) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
