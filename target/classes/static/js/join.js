@@ -16,6 +16,7 @@ function registerUserSignUpHandler(evt) {
     const email = $('#email_id').value;
     const emailDomain = $('#email_domain').value;
     const password = $('#pw1').value;
+    const password2 = $('#pw2').value;
     const name = $('#name').value;
     const phoneNumber = $('#cell1').value + $('#cell2').value + $('#cell3').value;
 
@@ -26,7 +27,7 @@ function registerUserSignUpHandler(evt) {
         body: JSON.stringify({
             "email": email + '@' + emailDomain,
             "password": password,
-            "password2": password,
+            "password2": password2,
             "name": name,
             "phoneNumber": phoneNumber
         }),

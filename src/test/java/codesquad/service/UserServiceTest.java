@@ -2,7 +2,6 @@ package codesquad.service;
 
 import codesquad.domain.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.UserDTO;
 import codesquad.domain.UserRequestDTO;
 import codesquad.exception.BadRequestException;
 import codesquad.repository.UserRepository;
@@ -12,11 +11,14 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.mock.mockito.SpyBean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.Optional;
 
-import static org.mockito.Mockito.when;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserServiceTest {
@@ -24,23 +26,26 @@ public class UserServiceTest {
     @Mock
     private UserRepository userRepository;
 
-    @Mock
-    private PasswordEncoder passwordEncoder;
-
-    private UserRequestDTO userRequestDTO;
+    private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     @InjectMocks
     private UserService userService;
 
+    private UserRequestDTO userRequestDTO;
+    private LoginDTO loginDTO;
+
+
     @Before
     public void setUp() {
-        userRequestDTO = new UserRequestDTO("email@email.com", "name", "010-1234-1234", "pass", "pass");
+        userRequestDTO = new UserRequestDTO("email@email.com", "name", "01012341234", "pass", "pass");
+        loginDTO = new LoginDTO("email@email.com", "pass");
     }
 
     @Test
     public void 회원가입() {
         User user = new User(userRequestDTO);
-        when(userRepository.save(user)).thenReturn(user);
+        when(passwordEncoder.encode(anyString())).thenReturn("pass");
+        assertThat(userRepository.save(userRequestDTO.toUserEntity(passwordEncoder))).isEqualTo(user);
     }
 
     @Test(expected = BadRequestException.class)
@@ -52,7 +57,9 @@ public class UserServiceTest {
 
     @Test
     public void 로그인_성공() {
-
+        User user = new User(userRequestDTO);
+        when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
+        userService.login(loginDTO);
     }
 
     @Test

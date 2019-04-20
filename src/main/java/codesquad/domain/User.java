@@ -1,7 +1,9 @@
 package codesquad.domain;
 
+import codesquad.exception.MismatchPasswordException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -10,6 +12,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
 public class User {
 
@@ -30,15 +33,6 @@ public class User {
     @Column(nullable = false)
     private String phoneNumber;
 
-    public User(UserDTO userDTO) {
-        if (userDTO.isPasswordCorrect()) {
-            this.email = userDTO.getEmail();
-            this.name = userDTO.getName();
-            this.password = userDTO.getPassword();
-            this.phoneNumber = userDTO.getPhoneNumber();
-        }
-    }
-
     public User(UserRequestDTO userRequestDTO){
         this.email = userRequestDTO.getEmail();
         this.name = userRequestDTO.getName();
@@ -46,20 +40,16 @@ public class User {
         this.phoneNumber = userRequestDTO.getPhoneNumber();
     }
 
-    public User(String name, String phoneNumber, String email) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
     public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
         if (!passwordEncoder.matches(loginDTO.getPassword(), this.getPassword())) {
-            return false;
+            throw new MismatchPasswordException("비밀번호가 다릅니다");
         }
         return true;
     }
 
-    public void encodePassword(PasswordEncoder passwordEncoder) {
-        this.password = passwordEncoder.encode(password);
+    public User encode(PasswordEncoder passwordEncoder){
+        this.password = passwordEncoder.encode(this.getPassword());
+        return this;
     }
+
 }

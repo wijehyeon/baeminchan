@@ -31,9 +31,6 @@ public class UserValidationTest {
 
     @Test
     public void 이메일_포맷_통과() {
-        User user = new User(userDTO);
-        Set<ConstraintViolation<User>> constraintViolations = validator.validate(user);
-        assertThat(constraintViolations.size()).isEqualTo(0);
     }
 
 

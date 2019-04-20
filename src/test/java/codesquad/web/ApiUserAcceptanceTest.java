@@ -1,15 +1,18 @@
 package codesquad.web;
 
 import codesquad.domain.LoginDTO;
-import codesquad.domain.UserDTO;
+import codesquad.domain.UserRequestDTO;
+import codesquad.exception.MismatchPasswordException;
 import codesquad.repository.UserRepository;
 import codesquad.support.test.AcceptanceTest;
 import org.junit.Before;
+import org.junit.ComparisonFailure;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-
-import javax.annotation.Resource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -19,10 +22,10 @@ public class ApiUserAcceptanceTest extends AcceptanceTest {
 
     private static final String LOGIN_URL = "/users/login";
 
-    private UserDTO userDTO;
+    private UserRequestDTO userRequestDTO;
 
-    @Resource
-    private UserRepository userRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Before
     public void setUp() {
@@ -30,21 +33,29 @@ public class ApiUserAcceptanceTest extends AcceptanceTest {
 
     @Test
     public void 회원가입() {
-        userDTO = new UserDTO("email", "name", "password", "password", "010-1234-1234");
-        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, userDTO, Void.class);
+        userRequestDTO = new UserRequestDTO("emailtest@email.com", "name", "01012341234", "password", "password");
+        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, userRequestDTO, Void.class);
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
+    }
+
+    @Test(expected = ComparisonFailure.class)
+    public void 회원가입_실패_이메일형식() {
+        userRequestDTO = new UserRequestDTO("email", "name", "01012341234", "password", "password");
+        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, userRequestDTO, Void.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
     }
 
     @Test
     public void 로그인() {
-        LoginDTO loginDTO = new LoginDTO("t", "t");
+        LoginDTO loginDTO = new LoginDTO("email@email.com", "password");
         ResponseEntity<Void> responseEntity = template().postForEntity(LOGIN_URL, loginDTO, Void.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 
-    @Test
+    @Test(expected = ComparisonFailure.class)
     public void 로그앤실패_비밀번호_불일치() {
-        LoginDTO loginDTO = new LoginDTO("email", "1234");
+        LoginDTO loginDTO = new LoginDTO("email@email.com", "pass");
+        loginDTO.setPassword(passwordEncoder.encode(loginDTO.getPassword()));
         ResponseEntity<Void> responseEntity = template().postForEntity(LOGIN_URL, loginDTO, Void.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
     }

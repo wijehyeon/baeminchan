@@ -6,7 +6,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Optional;
 
 public class SessionUtil {
-    private static final String LOGIN_SESSION_KEY = "loginedUser";
+    public static final String LOGIN_SESSION_KEY = "loginedUser";
 
     public static void setUserSession(HttpSession session, User user) {
         session.setAttribute(LOGIN_SESSION_KEY, user);

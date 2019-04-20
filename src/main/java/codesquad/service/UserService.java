@@ -15,21 +15,19 @@ import java.util.stream.Collectors;
 @Service("userService")
 public class UserService {
 
+    @Autowired
     private UserRepository userRepository;
-
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Transactional
     public User save(UserRequestDTO userRequestDTO) {
-        if(userRepository.findByEmail(userRequestDTO.getEmail()).isPresent()){
+        if (userRepository.findByEmail(userRequestDTO.getEmail()).isPresent()) {
             throw new BadRequestException("이미 존재하는 이메일입니다");
         }
-        return userRepository.save(userRequestDTO.toEntity());
+        User user = new User(userRequestDTO);
+        return userRepository.save(user.encode(passwordEncoder));
     }
 
     @Transactional(readOnly = true)
@@ -39,5 +37,12 @@ public class UserService {
                 .stream()
                 .map(UserResponseDTO::new)
                 .collect(Collectors.toList());
+    }
+
+    public User login(LoginDTO loginDTO) {
+        User user = userRepository.findByEmail(loginDTO.getEmail())
+                .orElseThrow(() -> new BadRequestException("존재하지 않는 이메일"));
+        user.isCorrectPassword(passwordEncoder, loginDTO);
+        return user;
     }
 }

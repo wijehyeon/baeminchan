@@ -6,7 +6,7 @@ function $(selector){
 }
 function init(){
     const longinButton = $("#loginButton")
-    loginButton.addEventListener("click", loginProcess)
+    longinButton.addEventListener("click", loginProcess)
 }
 
 function loginProcess(evt){
@@ -15,7 +15,7 @@ function loginProcess(evt){
     const password = $("#pwd").value
 
     fetchManager({
-        url: 'users/login',
+        url: '/users/login',
         method: 'post',
         headers: {'content-type' : 'application/json; charset=utf-8'},
         body: JSON.stringify({
