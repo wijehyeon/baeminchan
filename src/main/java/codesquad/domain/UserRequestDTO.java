@@ -41,11 +41,4 @@ public class UserRequestDTO {
         this.password = passwordEncoder.encode(this.getPassword());
         return new User(this);
     }
-
-    public boolean confirmPassword() {
-        if(password == password2)
-            return true;
-        else
-            return false;
-    }
 }

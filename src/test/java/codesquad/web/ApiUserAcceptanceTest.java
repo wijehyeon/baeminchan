@@ -2,8 +2,6 @@ package codesquad.web;
 
 import codesquad.domain.LoginDTO;
 import codesquad.domain.UserRequestDTO;
-import codesquad.exception.MismatchPasswordException;
-import codesquad.repository.UserRepository;
 import codesquad.support.test.AcceptanceTest;
 import org.junit.Before;
 import org.junit.ComparisonFailure;
@@ -11,7 +9,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import static org.assertj.core.api.Assertions.assertThat;

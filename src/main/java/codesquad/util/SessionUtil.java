@@ -16,7 +16,8 @@ public class SessionUtil {
         return Optional.ofNullable((User) session.getAttribute(LOGIN_SESSION_KEY))
                 .orElseThrow(RuntimeException::new);
     }
-    public static boolean isLoginUser(HttpSession session){
+
+    public static boolean isLoginUser(HttpSession session) {
         return session.getAttribute(LOGIN_SESSION_KEY) != null;
     }
 
