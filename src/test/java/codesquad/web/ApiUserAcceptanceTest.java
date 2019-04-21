@@ -24,10 +24,6 @@ public class ApiUserAcceptanceTest extends AcceptanceTest {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @Before
-    public void setUp() {
-    }
-
     @Test
     public void 회원가입() {
         userRequestDTO = new UserRequestDTO("emailtest@email.com", "name", "01012341234", "password", "password");

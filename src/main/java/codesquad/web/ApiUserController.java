@@ -20,7 +20,7 @@ public class ApiUserController {
 
     private UserService userService;
 
-    public ApiUserController(UserService userService){
+    public ApiUserController(UserService userService) {
         this.userService = userService;
     }
 

@@ -10,18 +10,20 @@ import javax.servlet.http.HttpSession;
 public class HomeController {
 
     @GetMapping("/")
-    public String home(){
+    public String home() {
         return "/index";
     }
+
     @GetMapping("/users/join")
-    public String join(HttpSession session){
-        if(SessionUtil.isLoginUser(session))
+    public String join(HttpSession session) {
+        if (SessionUtil.isLoginUser(session))
             return "redirect:/";
         return "/join";
     }
+
     @GetMapping("/users/login")
-    public String login(HttpSession session){
-        if(SessionUtil.isLoginUser(session))
+    public String login(HttpSession session) {
+        if (SessionUtil.isLoginUser(session))
             return "redirect:/";
         return "/login";
     }
