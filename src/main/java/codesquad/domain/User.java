@@ -33,7 +33,7 @@ public class User {
     @Column(nullable = false)
     private String phoneNumber;
 
-    public User(UserRequestDTO userRequestDTO){
+    public User(UserRequestDTO userRequestDTO) {
         this.email = userRequestDTO.getEmail();
         this.name = userRequestDTO.getName();
         this.password = userRequestDTO.getPassword();
@@ -47,7 +47,7 @@ public class User {
         return true;
     }
 
-    public User encode(PasswordEncoder passwordEncoder){
+    public User encode(PasswordEncoder passwordEncoder) {
         this.password = passwordEncoder.encode(this.getPassword());
         return this;
     }

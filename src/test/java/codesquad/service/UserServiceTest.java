@@ -62,14 +62,4 @@ public class UserServiceTest {
         userService.login(loginDTO);
     }
 
-    @Test
-    public void 로그인_실패_패스워드_불일치() {
-
-    }
-
-    @Test
-    public void 로그인_실패_존재하지_않는_이메일() {
-
-    }
-
 }
