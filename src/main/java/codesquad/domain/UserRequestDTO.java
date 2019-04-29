@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import javax.persistence.Column;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -17,7 +16,6 @@ import javax.validation.constraints.Size;
 public class UserRequestDTO {
 
     @NotBlank(message = "메일을 작성해주세요.")
-    @Column(unique = true)
     @Email(message = "메일의 양식을 지켜주세요.")
     private String email;
 

@@ -2,6 +2,7 @@ package codesquad.service;
 
 import codesquad.domain.*;
 import codesquad.exception.BadRequestException;
+import codesquad.exception.MismatchPasswordException;
 import codesquad.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -42,7 +43,9 @@ public class UserService {
     public User login(LoginDTO loginDTO) {
         User user = userRepository.findByEmail(loginDTO.getEmail())
                 .orElseThrow(() -> new BadRequestException("존재하지 않는 이메일"));
-        user.isCorrectPassword(passwordEncoder, loginDTO);
+        if (!passwordEncoder.matches(user.getPassword(), passwordEncoder.encode(loginDTO.getPassword()))) {
+            throw new MismatchPasswordException("비밀번호가 다릅니다");
+        }
         return user;
     }
 }
