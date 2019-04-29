@@ -3,7 +3,6 @@ package codesquad.domain;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -35,8 +34,4 @@ public class UserRequestDTO {
     @Pattern(regexp = "^[0-9a-zA-Z]+")
     private String password2;
 
-    public User toUserEntity(PasswordEncoder passwordEncoder) {
-        this.password = passwordEncoder.encode(this.getPassword());
-        return new User(this);
-    }
 }

@@ -3,7 +3,6 @@ package codesquad.web;
 import codesquad.domain.LoginDTO;
 import codesquad.domain.UserRequestDTO;
 import codesquad.support.test.AcceptanceTest;
-import org.junit.Before;
 import org.junit.ComparisonFailure;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

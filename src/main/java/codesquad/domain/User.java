@@ -33,6 +33,9 @@ public class User {
     @Column(nullable = false)
     private String phoneNumber;
 
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     public User(UserRequestDTO userRequestDTO) {
         this.email = userRequestDTO.getEmail();
         this.name = userRequestDTO.getName();
