@@ -1,12 +1,475 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ae8565f-f355-4263-ac63-80db06eda67e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/baeminchan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_4_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_guava_cache_4_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_springmvc_4_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_197.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_rakugakibox_spring_boot_logback_access_spring_boot_starter_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__pl_allegro_tech_boot_handlebars_spring_boot_starter_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/BaeminchanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/BaeminchanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/exception/BadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/exception/MismatchPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/exception/MismatchPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/exception/UnAuthenticationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/exception/UnAuthenticationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/exception/UnVerificationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/exception/UnVerificationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/util/SessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/util/SessionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/validate/RestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/validate/RestResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/validate/RestStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/validate/RestStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationErrorsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationErrorsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/btn-arrow-more.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/btn-arrow-more.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/btn-txt-more.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/btn-txt-more.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icon-sns-blog.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/icon-sns-blog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/icon-sns-facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/icon-sns-facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-banner-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-banner-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-banner-02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-banner-02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-best-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-best-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-main-visual-slide_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/img-sub-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/img-sub-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/logo-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-btn-arrow-main-slide.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-btn-arrow-main-slide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-btn-arrow-sliding-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-btn-arrow-sliding-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-bullet-arrow-down.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-bullet-arrow-down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-bullet-square.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-bullet-square.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-icon-search.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-icon-search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/spr-quick-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/spr-quick-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-best.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-best.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-side.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-side.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-soup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-header-soup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-link-best-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-link-best-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/txt-link-reasonable-menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/txt-link-reasonable-menu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/side-dish-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/side-dish-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/side-dishs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/side-dishs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/support/test/AcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/support/test/AcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/web/ApiUserAcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/web/ApiUserAcceptanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/empty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/empty.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/baeminchan.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/codesquad/domain/User 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/codesquad/domain/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/codesquad/domain/UserRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/codesquad/domain/UserRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/codesquad/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/codesquad/util/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/codesquad/web/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/codesquad/web/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/btn-arrow-more.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/btn-arrow-more.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/btn-txt-more.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/btn-txt-more.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icon-sns-blog.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/icon-sns-blog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/icon-sns-facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/icon-sns-facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-banner-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-banner-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-banner-02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-banner-02.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-best-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-best-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-main-visual-slide_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/img-sub-dish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/img-sub-dish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/logo-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/logo-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-btn-arrow-main-slide.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-btn-arrow-main-slide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-btn-arrow-sliding-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-btn-arrow-sliding-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-bullet-arrow-down.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-bullet-arrow-down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-bullet-square.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-bullet-square.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-icon-search.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-icon-search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/spr-quick-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/spr-quick-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-header-best.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-header-best.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-header-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-header-main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-header-side.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-header-side.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-header-soup.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-header-soup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-link-best-menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-link-best-menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/img/txt-link-reasonable-menu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/img/txt-link-reasonable-menu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/join.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/join.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/side-dish-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/side-dish-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/side-dishs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/side-dishs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/baeminchan.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/domain/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/domain/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/domain/UserValidationTest 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/service/UserServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/support/test/AcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/support/test/AcceptanceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/web/ApiUserAcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/web/ApiUserAcceptanceTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="baeminchan" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555816422673" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/config/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/BaeminchanApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/UserResponseDTO.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationErrorsResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
-  <component name="RunManager" selected="JUnit.ApiUserAcceptanceTest">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/codesquad/config/WebConfig.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baeminchan" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codesquad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codesquad" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baeminchan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baeminchan" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codesquad" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556503548790" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BaeminchanApplication">
     <configuration name="ApiUserAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baeminchan" />
       <extension name="coverage">
@@ -100,5 +563,335 @@
         <item itemvalue="JUnit.ApiUserAcceptanceTest.로그인" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ae8565f-f355-4263-ac63-80db06eda67e" name="Default Changelist" comment="" />
+      <created>1554478422322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554478422322</updated>
+      <workItem from="1554478423728" duration="675000" />
+      <workItem from="1554640031399" duration="633000" />
+      <workItem from="1554640771425" duration="5318000" />
+      <workItem from="1554688661881" duration="3183000" />
+      <workItem from="1554700507935" duration="6447000" />
+      <workItem from="1554707283603" duration="327000" />
+      <workItem from="1554716711933" duration="181000" />
+      <workItem from="1554740742614" duration="73000" />
+      <workItem from="1554811329994" duration="3492000" />
+      <workItem from="1554862854814" duration="1373000" />
+      <workItem from="1554877155431" duration="3331000" />
+      <workItem from="1554883068825" duration="182000" />
+      <workItem from="1554887958474" duration="629000" />
+      <workItem from="1554903204455" duration="7416000" />
+      <workItem from="1554961995911" duration="2445000" />
+      <workItem from="1554977253822" duration="238000" />
+      <workItem from="1554995227550" duration="597000" />
+      <workItem from="1555041051671" duration="14000" />
+      <workItem from="1555041731469" duration="378000" />
+      <workItem from="1555069338372" duration="2000" />
+      <workItem from="1555080412541" duration="133000" />
+      <workItem from="1555153591878" duration="1892000" />
+      <workItem from="1555202223805" duration="19000" />
+      <workItem from="1555242342840" duration="1421000" />
+      <workItem from="1555248485947" duration="1317000" />
+      <workItem from="1555249908280" duration="4928000" />
+      <workItem from="1555294841554" duration="10624000" />
+      <workItem from="1555335817931" duration="11000" />
+      <workItem from="1555390399535" duration="93000" />
+      <workItem from="1555599562292" duration="4794000" />
+      <workItem from="1555642109030" duration="2138000" />
+      <workItem from="1555678111604" duration="2500000" />
+      <workItem from="1555687958815" duration="17971000" />
+      <workItem from="1555777446977" duration="205000" />
+      <workItem from="1555777675947" duration="2300000" />
+      <workItem from="1555814885622" duration="1395000" />
+      <workItem from="1555854122659" duration="3000" />
+      <workItem from="1556352992986" duration="650000" />
+      <workItem from="1556354136256" duration="204000" />
+      <workItem from="1556354413233" duration="889000" />
+      <workItem from="1556355607494" duration="711000" />
+      <workItem from="1556503216458" duration="265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2887000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.20818071" />
+      <window_info id="Structure" order="1" sideWeight="0.5007133" side_tool="true" weight="0.22204472" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50071126" side_tool="true" weight="0.22204472" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33061224" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28367347" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.327551" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.22405373" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.15384616" />
+      <window_info id="Structure" order="1" sideWeight="0.5007133" side_tool="true" weight="0.22204472" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50071126" side_tool="true" weight="0.22204472" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30408162" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31336898" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.327551" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.09637912" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Key Promoter X" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/web/ApiUserAcceptanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/baeminchan.iml" />
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/support/test/AcceptanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="6" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/UserResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationErrorsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/BaeminchanApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>baeminchan</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
