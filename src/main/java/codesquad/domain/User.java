@@ -43,13 +43,6 @@ public class User {
         this.phoneNumber = userRequestDTO.getPhoneNumber();
     }
 
-    public boolean isCorrectPassword(PasswordEncoder passwordEncoder, LoginDTO loginDTO) {
-        if (!passwordEncoder.matches(loginDTO.getPassword(), this.getPassword())) {
-            throw new MismatchPasswordException("비밀번호가 다릅니다");
-        }
-        return true;
-    }
-
     public User encode(PasswordEncoder passwordEncoder) {
         this.password = passwordEncoder.encode(this.getPassword());
         return this;

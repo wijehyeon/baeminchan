@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ae8565f-f355-4263-ac63-80db06eda67e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/web/ApiUserAcceptanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/web/ApiUserAcceptanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/service/UserServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/codesquad/web/ApiUserAcceptanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/codesquad/web/ApiUserAcceptanceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,11 +97,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="517">
-                  <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+                <state relative-caret-position="379">
+                  <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -120,57 +126,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/repository/UserRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/LoginDTO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#649#650#0" expanded="true" />
-                    <element signature="e#695#696#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/service/UserService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="46" selection-start-line="46" selection-end-line="46" />
+                <state relative-caret-position="227">
+                  <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -204,9 +163,9 @@
         <option value="$PROJECT_DIR$/src/test/java/codesquad/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/codesquad/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/codesquad/domain/UserRequestDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java" />
         <option value="$PROJECT_DIR$/src/main/java/codesquad/domain/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/codesquad/validate/ValidationExceptionControllerAdvice.java" />
       </list>
     </option>
   </component>
@@ -424,7 +383,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556560742379" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556560860128" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -443,7 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest">
+  <component name="RunManager" selected="JUnit.UserTest.비밀번호확인">
     <configuration name="ApiUserAcceptanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baeminchan" />
       <extension name="coverage">
@@ -468,22 +427,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="codesquad.service" />
       <option name="MAIN_CLASS_NAME" value="codesquad.service.UserServiceTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="baeminchan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codesquad.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="codesquad.service" />
-      <option name="MAIN_CLASS_NAME" value="codesquad.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="회원가입" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -518,6 +461,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.비밀번호확인" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="baeminchan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codesquad.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="codesquad.domain" />
+      <option name="MAIN_CLASS_NAME" value="codesquad.domain.UserTest" />
+      <option name="METHOD_NAME" value="비밀번호확인" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserTest.비밀번호암호화" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="baeminchan" />
       <extension name="coverage">
@@ -543,11 +502,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.비밀번호확인" />
         <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserServiceTest.로그인_성공" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.ApiUserAcceptanceTest" />
-        <item itemvalue="JUnit.UserServiceTest.회원가입" />
       </list>
     </recent_temporary>
   </component>
@@ -603,14 +562,11 @@
       <workItem from="1556354413233" duration="889000" />
       <workItem from="1556355607494" duration="711000" />
       <workItem from="1556503216458" duration="4263000" />
-      <workItem from="1556534693630" duration="7583000" />
+      <workItem from="1556534693630" duration="7831000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest - 2019.04.29 at 22h 45m 45s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApiUserAcceptanceTest - 2019.04.29 at 22h 46m 05s.xml">
       <configuration name="ApiUserAcceptanceTest" configurationId="JUnit" />
     </history-entry>
@@ -638,15 +594,18 @@
     <history-entry file="UserServiceTest_로그인_성공 - 2019.04.30 at 02h 23m 51s.xml">
       <configuration name="UserServiceTest.로그인_성공" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest - 2019.04.30 at 02h 59m 12s.xml">
+      <configuration name="UserTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14468000" />
+    <option name="totallyTimeSpent" value="14716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-140" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.17518637" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49928877" visible="true" weight="0.17518637" />
       <window_info id="Structure" order="1" sideWeight="0.5007133" side_tool="true" weight="0.22204472" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -662,7 +621,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28316832" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.28316832" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32673267" />
@@ -877,32 +836,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/LoginDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/exception/MismatchPasswordException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,13 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar!/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -1073,16 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1110,10 +1030,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="126">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/LoginDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/web/ApiUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1122,8 +1071,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/codesquad/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="379">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codesquad/domain/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
