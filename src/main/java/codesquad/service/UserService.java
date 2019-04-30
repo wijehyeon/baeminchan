@@ -2,7 +2,6 @@ package codesquad.service;
 
 import codesquad.domain.*;
 import codesquad.exception.BadRequestException;
-import codesquad.exception.MismatchPasswordException;
 import codesquad.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

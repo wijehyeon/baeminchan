@@ -43,12 +43,11 @@ public class UserServiceTest {
 
     @Test
     public void 회원가입() {
-        User testUser = new User(userRequestDTO);
-        when(userRepository.save(testUser.encode(passwordEncoder))).thenReturn(testUser);
         when(passwordEncoder.encode(anyString())).thenReturn("password");
-        User tempUser = userService.save(userRequestDTO);
+        User testUser = new User(userRequestDTO);
 
-        assertThat(tempUser.getPassword()).isEqualTo("password");
+        when(userRepository.save(new User(userRequestDTO).encode(passwordEncoder))).thenReturn(testUser);
+        assertThat(userService.save(userRequestDTO).getPassword()).isEqualTo("password");
     }
 
     @Test(expected = BadRequestException.class)
