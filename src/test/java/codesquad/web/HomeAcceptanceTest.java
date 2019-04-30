@@ -27,5 +27,6 @@ public class HomeAcceptanceTest extends AcceptanceTest {
     public void 로그인화면() {
         ResponseEntity<String> responseEntity = template().getForEntity(LOGIN_URL, String.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        log.debug("body : {}", responseEntity.getBody());
     }
 }

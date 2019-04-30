@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.rmi.UnexpectedException;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -59,10 +59,10 @@ public class UserServiceTest {
     }
 
     @Test
-    public void 로그인_성공() {
+    public void 로그인_성공() throws UnexpectedException {
         User user = new User(userRequestDTO);
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
-        userService.login(loginDTO);
+        User loginUser = userService.login(loginDTO);
+        assertThat(user).isEqualTo(loginUser);
     }
-
 }

@@ -9,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.rmi.UnexpectedException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -40,12 +41,11 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    public User login(LoginDTO loginDTO) {
-        User user = userRepository.findByEmail(loginDTO.getEmail())
-                .orElseThrow(() -> new BadRequestException("존재하지 않는 이메일"));
-        if (!passwordEncoder.matches(user.getPassword(), passwordEncoder.encode(loginDTO.getPassword()))) {
-            throw new MismatchPasswordException("비밀번호가 다릅니다");
-        }
-        return user;
+    @Transactional
+    public User login(LoginDTO loginDTO) throws UnexpectedException {
+
+        return userRepository.findByEmail(loginDTO.getEmail())
+                .filter(user -> user.match(loginDTO))
+                .orElseThrow(() -> new UnexpectedException("존재하지 않는 이메일"));
     }
 }

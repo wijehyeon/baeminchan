@@ -48,4 +48,10 @@ public class User {
         return this;
     }
 
+    public boolean match(LoginDTO loginDTO) {
+        if (password != loginDTO.getPassword()) {
+            return false;
+        }
+        return true;
+    }
 }

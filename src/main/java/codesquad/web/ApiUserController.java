@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.net.URI;
+import java.rmi.UnexpectedException;
 
 @RestController
 @RequestMapping("/users")
@@ -35,7 +36,7 @@ public class ApiUserController {
 
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Void> login(HttpSession session, @Valid @RequestBody LoginDTO loginDTO) {
+    public ResponseEntity<Void> login(HttpSession session, @Valid @RequestBody LoginDTO loginDTO) throws UnexpectedException {
         session.setAttribute(SessionUtil.LOGIN_SESSION_KEY, userService.login(loginDTO));
         return ResponseEntity.status(HttpStatus.OK).build();
     }
