@@ -1,6 +1,5 @@
 package codesquad.domain;
 
-import codesquad.exception.MismatchPasswordException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,11 +35,11 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    public User(UserRequestDTO userRequestDTO) {
-        this.email = userRequestDTO.getEmail();
-        this.name = userRequestDTO.getName();
-        this.password = userRequestDTO.getPassword();
-        this.phoneNumber = userRequestDTO.getPhoneNumber();
+    public User(JoinDTO joinDTO) {
+        this.email = joinDTO.getEmail();
+        this.name = joinDTO.getName();
+        this.password = joinDTO.getPassword();
+        this.phoneNumber = joinDTO.getPhoneNumber();
     }
 
     public User encode(PasswordEncoder passwordEncoder) {
@@ -48,7 +47,7 @@ public class User {
         return this;
     }
 
-    public boolean match(LoginDTO loginDTO) {
+    public boolean matchPassword(LoginDTO loginDTO) {
         if (password != loginDTO.getPassword()) {
             return false;
         }

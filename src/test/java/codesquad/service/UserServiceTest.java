@@ -2,7 +2,7 @@ package codesquad.service;
 
 import codesquad.domain.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.UserRequestDTO;
+import codesquad.domain.JoinDTO;
 import codesquad.exception.BadRequestException;
 import codesquad.repository.UserRepository;
 import org.junit.Before;
@@ -31,35 +31,35 @@ public class UserServiceTest {
     @InjectMocks
     private UserService userService;
 
-    private UserRequestDTO userRequestDTO;
+    private JoinDTO joinDTO;
     private LoginDTO loginDTO;
 
 
     @Before
     public void setUp() {
-        userRequestDTO = new UserRequestDTO("email@email.com", "name", "01012341234", "password", "password");
+        joinDTO = new JoinDTO("email@email.com", "name", "01012341234", "password", "password");
         loginDTO = new LoginDTO("email@email.com", "password");
     }
 
     @Test
     public void 회원가입() {
         when(passwordEncoder.encode(anyString())).thenReturn("password");
-        User testUser = new User(userRequestDTO);
+        User testUser = new User(joinDTO);
 
-        when(userRepository.save(new User(userRequestDTO).encode(passwordEncoder))).thenReturn(testUser);
-        assertThat(userService.save(userRequestDTO).getPassword()).isEqualTo("password");
+        when(userRepository.save(new User(joinDTO).encode(passwordEncoder))).thenReturn(testUser);
+        assertThat(userService.save(joinDTO).getPassword()).isEqualTo("password");
     }
 
     @Test(expected = BadRequestException.class)
     public void 회원가입_실패_이메일중복() {
-        User user = new User(userRequestDTO);
+        User user = new User(joinDTO);
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
-        userService.save(userRequestDTO);
+        userService.save(joinDTO);
     }
 
     @Test
     public void 로그인_성공() throws UnexpectedException {
-        User user = new User(userRequestDTO);
+        User user = new User(joinDTO);
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));
         User loginUser = userService.login(loginDTO);
         assertThat(user).isEqualTo(loginUser);

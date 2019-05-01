@@ -1,7 +1,7 @@
 package codesquad.web;
 
 import codesquad.domain.LoginDTO;
-import codesquad.domain.UserRequestDTO;
+import codesquad.domain.JoinDTO;
 import codesquad.support.test.AcceptanceTest;
 import org.junit.ComparisonFailure;
 import org.junit.Test;
@@ -18,22 +18,22 @@ public class ApiUserAcceptanceTest extends AcceptanceTest {
 
     private static final String LOGIN_URL = "/users/login";
 
-    private UserRequestDTO userRequestDTO;
+    private JoinDTO joinDTO;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Test
     public void 회원가입() {
-        userRequestDTO = new UserRequestDTO("emailtest@email.com", "name", "01012341234", "password", "password");
-        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, userRequestDTO, Void.class);
+        joinDTO = new JoinDTO("emailtest@email.com", "name", "01012341234", "password", "password");
+        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, joinDTO, Void.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
     }
 
     @Test(expected = ComparisonFailure.class)
     public void 회원가입_실패_이메일형식() {
-        userRequestDTO = new UserRequestDTO("email", "name", "01012341234", "password", "password");
-        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, userRequestDTO, Void.class);
+        joinDTO = new JoinDTO("email", "name", "01012341234", "password", "password");
+        ResponseEntity<Void> responseEntity = template().postForEntity(JOIN_URL, joinDTO, Void.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.CREATED);
     }
 

@@ -2,7 +2,7 @@ package codesquad.web;
 
 import codesquad.domain.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.UserRequestDTO;
+import codesquad.domain.JoinDTO;
 import codesquad.service.UserService;
 import codesquad.util.SessionUtil;
 import org.springframework.http.HttpHeaders;
@@ -27,8 +27,8 @@ public class ApiUserController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Void> create(@RequestBody @Valid UserRequestDTO userRequestDTO) {
-        User user = userService.save(userRequestDTO);
+    public ResponseEntity<Void> create(@RequestBody @Valid JoinDTO joinDTO) {
+        User user = userService.save(joinDTO);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(URI.create("/users/" + user.getId()));
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);

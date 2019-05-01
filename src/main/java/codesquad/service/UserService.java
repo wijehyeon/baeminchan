@@ -23,11 +23,11 @@ public class UserService {
     private PasswordEncoder passwordEncoder;
 
     @Transactional
-    public User save(UserRequestDTO userRequestDTO) {
-        if (userRepository.findByEmail(userRequestDTO.getEmail()).isPresent()) {
+    public User save(JoinDTO joinDTO) {
+        if (userRepository.findByEmail(joinDTO.getEmail()).isPresent()) {
             throw new BadRequestException("이미 존재하는 이메일입니다");
         }
-        User user = new User(userRequestDTO);
+        User user = new User(joinDTO);
         return userRepository.save(user.encode(passwordEncoder));
     }
 
@@ -44,7 +44,7 @@ public class UserService {
     public User login(LoginDTO loginDTO) throws UnexpectedException {
 
         return userRepository.findByEmail(loginDTO.getEmail())
-                .filter(user -> user.match(loginDTO))
+                .filter(user -> user.matchPassword(loginDTO))
                 .orElseThrow(() -> new UnexpectedException("존재하지 않는 이메일"));
     }
 }
