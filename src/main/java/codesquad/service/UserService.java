@@ -31,19 +31,19 @@ public class UserService {
         return userRepository.save(user.encode(passwordEncoder));
     }
 
-    public List<UserResponseDTO> findAll() {
-        return userRepository
-                .findAll()
-                .stream()
-                .map(UserResponseDTO::new)
-                .collect(Collectors.toList());
-    }
-
     @Transactional
     public User login(LoginDTO loginDTO) throws UnexpectedException {
 
         return userRepository.findByEmail(loginDTO.getEmail())
                 .filter(user -> user.matchPassword(loginDTO))
                 .orElseThrow(() -> new UnexpectedException("존재하지 않는 이메일"));
+    }
+
+    public List<UserResponseDTO> findAll() {
+        return userRepository
+                .findAll()
+                .stream()
+                .map(UserResponseDTO::new)
+                .collect(Collectors.toList());
     }
 }
