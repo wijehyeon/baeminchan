@@ -31,7 +31,6 @@ public class UserService {
         return userRepository.save(user.encode(passwordEncoder));
     }
 
-    @Transactional(readOnly = true)
     public List<UserResponseDTO> findAll() {
         return userRepository
                 .findAll()
