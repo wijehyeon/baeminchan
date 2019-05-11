@@ -22,9 +22,7 @@ public class HomeController {
     }
 
     @GetMapping("/users/login")
-    public String login(HttpSession session) {
-        if (SessionUtil.isLoginUser(session))
-            return "redirect:/";
+    public String login() {
         return "/login";
     }
 }
