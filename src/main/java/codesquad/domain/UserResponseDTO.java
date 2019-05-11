@@ -13,6 +13,7 @@ public class UserResponseDTO {
 
     private String email;
 
+    //TODO : Response인데 DTO로 감싼 이유 생각해보기
     public UserResponseDTO(User user) {
         this.id = user.getId();
         this.name = user.getName();

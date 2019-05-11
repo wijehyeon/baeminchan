@@ -30,10 +30,13 @@ public class ApiUserController {
     public ResponseEntity<Void> create(@RequestBody @Valid JoinDTO joinDTO) {
         User user = userService.save(joinDTO);
         HttpHeaders headers = new HttpHeaders();
+
+        //TODO : generate url 함수 사용해보기
         headers.setLocation(URI.create("/users/" + user.getId()));
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
 
+    //TODO : ResponseStatus의 필요성 생각해보기
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Void> login(HttpSession session, @Valid @RequestBody LoginDTO loginDTO) throws UnexpectedException {

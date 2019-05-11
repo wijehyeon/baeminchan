@@ -27,10 +27,12 @@ public class UserService {
         if (userRepository.findByEmail(joinDTO.getEmail()).isPresent()) {
             throw new BadRequestException("이미 존재하는 이메일입니다");
         }
+        //TODO : ControllerAdvice를 통해 AOP해보기.
         User user = new User(joinDTO);
         return userRepository.save(user.encode(passwordEncoder));
     }
 
+    //TODO : Transactional 필요한지 알아보기
     @Transactional
     public User login(LoginDTO loginDTO) throws UnexpectedException {
 
