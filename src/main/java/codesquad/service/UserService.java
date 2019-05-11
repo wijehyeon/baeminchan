@@ -1,6 +1,7 @@
 package codesquad.service;
 
 import codesquad.domain.*;
+import codesquad.exception.AlreadyExistEmailException;
 import codesquad.exception.BadRequestException;
 import codesquad.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +26,8 @@ public class UserService {
     @Transactional
     public User save(JoinDTO joinDTO) {
         if (userRepository.findByEmail(joinDTO.getEmail()).isPresent()) {
-            throw new BadRequestException("이미 존재하는 이메일입니다");
+            throw new AlreadyExistEmailException("이미 존재하는 이메일");
         }
-        //TODO : ControllerAdvice를 통해 AOP해보기.
         User user = new User(joinDTO);
         return userRepository.save(user.encode(passwordEncoder));
     }
