@@ -14,23 +14,23 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 public class JoinDTO {
 
-    @NotBlank(message = "메일을 작성해주세요.")
-    @Email(message = "메일의 양식을 지켜주세요.")
+    @NotBlank
+    @Email
     private String email;
 
-    @NotBlank(message = "이름을 작성해주세요.")
+    @NotBlank
     @Size(min = 1, max = 20)
     private String name;
 
-    @NotBlank(message = "전화번호를 작성해주세요.")
-    @Pattern(regexp = "^\\d{3}-\\d{3,4}-\\d{4}$", message = "10~11자리의 숫자만 입력가능합니다")
+    @NotBlank
+    @Pattern(regexp = "^\\d{3}-\\d{3,4}-\\d{4}$")
     private String phoneNumber;
 
-    @NotBlank(message = "password를 입력해주세요")
+    @NotBlank
     @Pattern(regexp = "^[0-9a-zA-Z]+")
     private String password;
 
-    @NotBlank(message = "password를 입력해주세요")
+    @NotBlank
     @Pattern(regexp = "^[0-9a-zA-Z]+")
     private String password2;
 
