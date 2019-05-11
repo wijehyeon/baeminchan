@@ -4,7 +4,7 @@ import org.springframework.core.Ordered;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-public class MVCConfig extends WebMvcConfigurerAdapter {
+public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
@@ -12,7 +12,5 @@ public class MVCConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/").setViewName("index");
         registry.addViewController("/users/join").setViewName("join");
         registry.addViewController("/users/loginForm").setViewName("login");
-
-
     }
 }
