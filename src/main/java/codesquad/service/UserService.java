@@ -32,8 +32,6 @@ public class UserService {
         return userRepository.save(user.encode(passwordEncoder));
     }
 
-    //TODO : Transactional 필요한지 알아보기
-    @Transactional
     public User login(LoginDTO loginDTO) throws UnexpectedException {
 
         return userRepository.findByEmail(loginDTO.getEmail())

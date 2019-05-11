@@ -47,6 +47,10 @@ public class User {
         return this;
     }
 
+    public String generateUrl() {
+        return "/users/" + this.getId();
+    }
+
     public boolean matchPassword(LoginDTO loginDTO) {
         if (password != loginDTO.getPassword()) {
             return false;
