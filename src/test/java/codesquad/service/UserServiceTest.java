@@ -3,14 +3,16 @@ package codesquad.service;
 import codesquad.domain.LoginDTO;
 import codesquad.domain.User;
 import codesquad.domain.JoinDTO;
-import codesquad.exception.BadRequestException;
+import codesquad.exception.AlreadyExistEmailException;
 import codesquad.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.rmi.UnexpectedException;
@@ -25,7 +27,7 @@ public class UserServiceTest {
     @Mock
     private UserRepository userRepository;
 
-    @Mock
+    @Spy
     private PasswordEncoder passwordEncoder;
 
     @InjectMocks
@@ -37,20 +39,18 @@ public class UserServiceTest {
 
     @Before
     public void setUp() {
-        joinDTO = new JoinDTO("email@email.com", "name", "01012341234", "password", "password");
+        joinDTO = new JoinDTO("email@email.com", "name", "010-1234-1234", "password", "password");
         loginDTO = new LoginDTO("email@email.com", "password");
     }
 
     @Test
     public void 회원가입() {
-        when(passwordEncoder.encode(anyString())).thenReturn("password");
         User testUser = new User(joinDTO);
-
-        when(userRepository.save(new User(joinDTO).encode(passwordEncoder))).thenReturn(testUser);
-        assertThat(userService.save(joinDTO).getPassword()).isEqualTo("password");
+        when(userRepository.save(any(User.class))).thenReturn(testUser);
+        assertThat(userService.save(joinDTO)).isEqualTo(testUser);
     }
 
-    @Test(expected = BadRequestException.class)
+    @Test(expected = AlreadyExistEmailException.class)
     public void 회원가입_실패_이메일중복() {
         User user = new User(joinDTO);
         when(userRepository.findByEmail(user.getEmail())).thenReturn(Optional.of(user));

@@ -47,12 +47,16 @@ public class User {
         return this;
     }
 
+    public void encodePassword(PasswordEncoder passwordEncoder){
+        this.password = passwordEncoder.encode(this.getPassword());
+    }
+
     public String generateUrl() {
         return "/users/" + this.getId();
     }
 
     public boolean matchPassword(LoginDTO loginDTO) {
-        if (password != loginDTO.getPassword()) {
+        if (!password.equals(loginDTO.getPassword())) {
             return false;
         }
         return true;

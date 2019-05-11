@@ -18,7 +18,7 @@ function registerUserSignUpHandler(evt) {
     const password = $('#pw1').value;
     const password2 = $('#pw2').value;
     const name = $('#name').value;
-    const phoneNumber = $('#cell1').value + $('#cell2').value + $('#cell3').value;
+    const phoneNumber = $('#cell1').value +"-" + $('#cell2').value +"-"+ $('#cell3').value;
 
     fetchManager({
         url: "/users",

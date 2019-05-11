@@ -23,7 +23,7 @@ public class JoinDTO {
     private String name;
 
     @NotBlank
-    @Pattern(regexp = "^\\d{3}-\\d{3,4}-\\d{4}$")
+    @Pattern(regexp = "^$|^\\d{3}-\\d{3,4}-\\d{4}$")
     private String phoneNumber;
 
     @NotBlank

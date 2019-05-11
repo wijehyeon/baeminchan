@@ -33,7 +33,6 @@ public class UserService {
     }
 
     public User login(LoginDTO loginDTO) throws UnexpectedException {
-
         return userRepository.findByEmail(loginDTO.getEmail())
                 .filter(user -> user.matchPassword(loginDTO))
                 .orElseThrow(() -> new UnexpectedException("존재하지 않는 이메일"));
