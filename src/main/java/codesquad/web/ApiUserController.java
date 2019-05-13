@@ -1,8 +1,8 @@
 package codesquad.web;
 
-import codesquad.domain.LoginDTO;
+import codesquad.dto.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.JoinDTO;
+import codesquad.dto.JoinDTO;
 import codesquad.service.UserService;
 import codesquad.util.SessionUtil;
 import org.springframework.http.HttpHeaders;

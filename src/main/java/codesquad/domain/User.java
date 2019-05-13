@@ -1,5 +1,7 @@
 package codesquad.domain;
 
+import codesquad.dto.JoinDTO;
+import codesquad.dto.LoginDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,5 +1,6 @@
-package codesquad.domain;
+package codesquad.dto;
 
+import codesquad.domain.User;
 import lombok.Getter;
 
 @Getter

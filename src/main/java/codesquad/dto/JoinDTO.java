@@ -1,5 +1,6 @@
-package codesquad.domain;
+package codesquad.dto;
 
+import codesquad.util.RegexUtil;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,15 +24,15 @@ public class JoinDTO {
     private String name;
 
     @NotBlank
-    @Pattern(regexp = "^$|^\\d{3}-\\d{3,4}-\\d{4}$")
+    @Pattern(regexp = RegexUtil.PHONE_NUMBER)
     private String phoneNumber;
 
     @NotBlank
-    @Pattern(regexp = "^[0-9a-zA-Z]+")
+    @Pattern(regexp = RegexUtil.PASSWORD)
     private String password;
 
     @NotBlank
-    @Pattern(regexp = "^[0-9a-zA-Z]+")
+    @Pattern(regexp = RegexUtil.PASSWORD)
     private String password2;
 
 }

@@ -1,7 +1,7 @@
 package codesquad.web;
 
-import codesquad.domain.LoginDTO;
-import codesquad.domain.JoinDTO;
+import codesquad.dto.LoginDTO;
+import codesquad.dto.JoinDTO;
 import codesquad.support.test.AcceptanceTest;
 import org.junit.ComparisonFailure;
 import org.junit.Test;

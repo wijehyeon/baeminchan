@@ -1,8 +1,8 @@
 package codesquad.service;
 
-import codesquad.domain.LoginDTO;
+import codesquad.dto.LoginDTO;
 import codesquad.domain.User;
-import codesquad.domain.JoinDTO;
+import codesquad.dto.JoinDTO;
 import codesquad.exception.AlreadyExistEmailException;
 import codesquad.repository.UserRepository;
 import org.junit.Before;
